@@ -36,6 +36,10 @@
         top: 20;
        }
 
+       #pricing-btn:hover{
+        color: #5cccc9 !important;
+       }
+
        
        @media (min-width: 768px){
         #hero{
@@ -58,6 +62,7 @@
             position: relative;
             height: 90%;
         }
+
 
        }
 
@@ -93,6 +98,7 @@
 
        #kraft-2{
         background-color: #e7f5f4 !important;
+        position: initial;
        }
        }
 
@@ -115,7 +121,8 @@
                   <p class="text-light">Far far away, behind the word mountains, far from the countries .</p>
             </div>
         </div>
-        <nav class="navbar navbar-expand-md" id="nav">
+        <div id="nav-container">
+        <nav class="navbar navbar-expand-md sticky-top" id="nav">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand text-dark" style="font-size: 20px; font-weight: 700;">Quantum<span style="color: #5cccc9;">.</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
@@ -157,6 +164,7 @@
             </div>
     
         </nav>
+        </div>
         <div id="intro" class="pb-md-5">
             <div>
                 <h2>Design is not just what it looks like and how it feels.</h2>
@@ -219,27 +227,111 @@
         </div>
        <div id="kraft" class="pt-3"> </div>
      </section>
-     <section class="">
-       <div class="container-fluid">
-        <div class="row justify-content-center align-center">
-            <div class="col-sm-8 col-md-6 p-0 text-end">
-                <div class="row-3 p-0 text-end">
-                    <img src="./colourlib-image/office_3.jpg.webp" class="img-fluid w-50">
-                </div>
-                <div class="row-5">
-                    <img src="./colourlib-image/office_2.jpg.webp" class="img-fluid w-75">
-                </div>
+     <section>
+       <div class="container-fluid pt-3 pb-3">
+        <div class="row row-gap-3 justify-content-center align-center">
+            <div class="col-lg-3 col-md-6 col-sm-8">
+                <img src="./colourlib-image/office_1.jpg.webp" class="img-fluid">
             </div>
-            <div class="col-sm-8 col-md-6 p-0">
-                <div class="row w-75">
-                    <img src="./colourlib-image/office_4.jpg.webp" class="img-fluid">
-                </div>
-                <div class="row-5 p-0 w-50">
-                    <img src="./colourlib-image/office_1.jpg.webp" class="img-fluid">
-                </div>
+            <div class="col-lg-3 col-md-6 col-sm-8">
+                <img src="./colourlib-image/office_2.jpg.webp" class="img-fluid">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-8">
+                <img src="./colourlib-image/office_3.jpg.webp" class="img-fluid">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-8">
+                <img src="./colourlib-image/office_4.jpg.webp" class="img-fluid">
             </div>
         </div>
        </div>
      </section>
+     <section class="mb-5">
+        <div class="container-fluid text-center pt-5 pb-5">
+            <h6 style="color: #5cccc9;">Pricing for All</h6>
+            <h1 style="color: rgb(66, 66, 66); font-family: serif;">Far far away, behind the word</h1>
+            <h1 style="color: rgb(66, 66, 66); font-family: serif;">mountains, far from the countries .</h1>
+        </div>
+        <div class="container-fluid px-5 pb-5">
+            <div class="row row-gap-3 justify-content-center align-center">
+                <div class="col-sm-8 col-md-6 col-lg-4 py-5 ps-4" style="background-color: #5cccc9;">
+                    <h2 class="text-light mb-2" style="font-family: serif;">Free</h2>
+                    <h2 class="text-light mb-4">$0.00</h2>
+                    <ul class="ps-0">
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Basic Support</li>
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Migration Support</li>
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Dedicated Technical Support</li>
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Services</li>
+                    </ul>
+                    <button class="btn btn-transparent text-light border-light btn-outline-light" id="pricing-btn">GET STARTED</button>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 py-5 ps-4" style="background-color: #6ebfb5;">
+                    <h2 class="text-light mb-2" style="font-family: serif;">Premium</h2>
+                    <h2 class="text-light mb-4">$99.00</h2>
+                    <ul class="ps-0">
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Basic Support</li>
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Migration Support</li>
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Dedicated Technical Support</li>
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Services</li>
+                    </ul>
+                    <button class="btn btn-transparent text-light border-light btn-outline-light" id="pricing-btn">GET STARTED</button>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 py-5 ps-4" style="background-color: #ade498;">
+                    <h2 class="text-light mb-2" style="font-family: serif;">Enterprise</h2>
+                    <h2 class="text-light mb-4">$180.00</h2>
+                    <ul class="ps-0">
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Basic Support</li>
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Migration Support</li>
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Dedicated Technical Support</li>
+                        <li class="text-light d-block pb-3" style="font-weight: 500;"><span class="me-3">&#10095;</span>Services</li>
+                    </ul>
+                    <button class="btn btn-transparent text-light border-light btn-outline-light" id="pricing-btn">GET STARTED</button>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section>
+        <div class="container-fluid py-5 px-5">
+            <div class="row row-gap-4 justify-content-center align-center">
+                <div class="col-lg-6 col-md-6 col-sm-8 ">
+                    <h6 style="color: #5cccc9;">About Us</h6>
+            <h1 class="pe-3" style="color: rgb(66, 66, 66); font-family: serif;">Far far away, behind the word mountains, far from the countries.</h1>
+                </div>
+                <div class="col-sm-8 col-md-3 col-lg-3">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center mb-3" style="background-color: #5cccc9; width: 100px; height: 100px;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-buildings" viewBox="0 0 16 16">
+                        <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+                        <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+                      </svg></div>
+                      <h6 class="mb-2 fw-semi-bold fs-5" style="font-family: serif; font-weight: 700; color: rgb(66, 66, 66);">Creatives</h6>
+                      <p class="text-black-50">Far far away, behind the word mountains, far from the countries .</p>
+                </div>
+                <div class="col-sm-8 col-md-3 col-lg-3">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center mb-3" style="background-color: #5cccc9; width: 100px; height: 100px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+                          </svg></div>
+                      <h5 style="font-weight: 700; font-family: serif; color: rgb(66, 66, 66);">Solutions</h5>
+                      <p class="text-black-50">Far far away, behind the word mountains, far from the countries .</p>
+                </div>
+            </div>
+        </div>
+     </section>
+     <div class="container-fluid">
+        <div class="row" id="person_1" style="position: relative;">
+            <div class="col-md-6 col-sm-8" id="person_1">
+                <img src="./colourlib-image/office_1.jpg.webp" class="img-fluid h-100">
+            </div>
+            <div class="col-md-6 col-sm-8 text-light ps-5 py-4" style="background-color: #5cccc9;">
+                <p style="font-size: 30px;">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+                   <div class="d-flex align-items-center">
+                         <img src="./colourlib-image/person_1.jpg" class="img-fluid w-25 rounded-circle">
+                         <div class="ms-2">
+                            <span>James Wilson</span></br>
+                            <span style="color: rgba(255, 255, 255, 0.5);">CEO, Co-Founder</span>
+                         </div>
+                   </div> 
+            </div>
+        </div>
+     </div>
  </body>
 </html>
