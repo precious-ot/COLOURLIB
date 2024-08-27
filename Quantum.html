@@ -40,6 +40,10 @@
         color: #5cccc9 !important;
        }
 
+       .sticky{
+        background-color: white !important;
+       }
+
        
        @media (min-width: 768px){
         #hero{
@@ -63,8 +67,46 @@
             height: 90%;
         }
 
+        #office-1-container{
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: right !important;
+            position: relative;
+        }
+
+        #office-1{
+            width: 40%;
+            position: absolute;
+            height: 100%;
+            left: 5%;
+            top: -8%;
+        }
+
+        #person-1{
+            width: 60%;
+            padding-left: 50px !important;
+        }
+       
+    }
+
+       @media (min-width: 1023px){
+        #person-1{
+            padding-left: 90px !important;
+            padding-right: 20px !important;
+        }
+
+        #person-1-paragraph{
+            font-size: 30px !important;
+        }
 
        }
+
+       @media (min-width: 2559px){
+        #person-1{
+            padding-left: 160px !important;
+            padding-right: 50px !important;
+        }
+    }
 
        @media(max-width: 767px){
         #section-1{
@@ -72,7 +114,7 @@
         }
 
         #nav{
-            position: absolute;
+            position: fixed !important;
             top: 0;
             width: 100%;
             background-color: white;
@@ -122,7 +164,7 @@
             </div>
         </div>
         <div id="nav-container">
-        <nav class="navbar navbar-expand-md sticky-top" id="nav">
+        <nav class="navbar navbar-expand-md fixed-top" id="nav">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand text-dark" style="font-size: 20px; font-weight: 700;">Quantum<span style="color: #5cccc9;">.</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
@@ -315,23 +357,75 @@
             </div>
         </div>
      </section>
-     <div class="container-fluid">
-        <div class="row" id="person_1" style="position: relative;">
-            <div class="col-md-6 col-sm-8" id="person_1">
-                <img src="./colourlib-image/office_1.jpg.webp" class="img-fluid h-100">
-            </div>
-            <div class="col-md-6 col-sm-8 text-light ps-5 py-4" style="background-color: #5cccc9;">
-                <p style="font-size: 30px;">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
-                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
-                   <div class="d-flex align-items-center">
-                         <img src="./colourlib-image/person_1.jpg" class="img-fluid w-25 rounded-circle">
-                         <div class="ms-2">
-                            <span>James Wilson</span></br>
-                            <span style="color: rgba(255, 255, 255, 0.5);">CEO, Co-Founder</span>
-                         </div>
-                   </div> 
+     <section>
+        <div class="container-fluid px-md-0 py-5 mt-4">
+            <div class="d-flex flex-column-reverse" id="office-1-container">
+               <div class="py-5 px-4" style="background-color: #5cccc9;" id="person-1">
+                <p class="fs-5 text-light lh-5" id="person-1-paragraph">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                     Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+                     <div class="d-flex justify-content-left align-items-center">
+                        <img src="./colourlib-image/person_1.jpg" class="img-fluid rounded-circle" style="width: 15%;">
+                        <div class="ps-2">
+                            <span class="text-light">James Wilson</span><br>
+                                <span style="color: rgb(207, 203, 203);">CEO, Co-Founder</span>
+                        </div>
+                     </div>
+               </div>
+               
+               <img src="./colourlib-image/office_1.jpg.webp" class="img-fluid" id="office-1">
             </div>
         </div>
-     </div>
+     </section>
+     <section>
+        <div class="container-fluid py-5 mt-5 px-4 px-md-5">
+            <div class="row justify-content-center align-center">
+                <div class="col-sm-6 col-md-2">
+                    <h5 class="mb-4">Help</h5>
+                    <ul class="ps-0" style="list-style: none;">
+                        <li class="pb-1"><a class="text-dark text-decoration-none"style="font-size: 14px;">Contact us</a></li>
+                        <li class="pb-1"><a class="text-dark text-decoration-none"style="font-size: 14px;">Colourlib</a></li>
+                        <li class="pb-1"><a class="text-dark text-decoration-none"style="font-size: 14px;">Web design</a></li>
+                        <li class="pb-1"><a class="text-dark text-decoration-none"style="font-size: 14px;">Pricing</a></li>
+                        <li class="pb-1"><a class="text-dark text-decoration-none" style="font-size: 14px;">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <h5 class="mb-4">About</h5>
+                    <ul class="ps-0" style="list-style: none;">
+                        <li class="pb-1"><a class="text-dark text-decoration-none" style="font-size: 14px;">About us</a></li>
+                        <li class="pb-1"><a class="text-dark text-decoration-none" style="font-size: 14px;">Service</a></li>
+                        <li class="pb-1"><a class="text-dark text-decoration-none" style="font-size: 14px;">Solution</a></li>
+                        <li class="pb-1"><a class="text-dark text-decoration-none" style="font-size: 14px;">Term</a></li>
+                        <li class="pb-1"><a class="text-dark text-decoration-none" style="font-size: 14px;">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <h5 class="mb-4">Support</h5>
+                    <ul class="ps-0" style="list-style: none;">
+                        <li class="pb-1"><a class="text-dark text-decoration-none" style="font-size: 14px;">Knowledg base</a></li>
+                        <li class="pb-1"><a class="text-dark text-decoration-none" style="font-size: 14px;">Forum</a></li>
+                        <li class="pb-1"><a class="text-dark text-decoration-none" style="font-size: 14px;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <h5 class="mb-4">Subscribe</h5>
+
+                    <div class="input-group">
+                      <input class="form-control border-dark border-2 form-control-lg" type="email" placeholder="Email address">
+                      <button class="btn btn-dark" type="button">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section>
+        <div class="text-center pt-4 pb-5" style="background-color: #f2fcfb;">
+            <span id="copy"></span>
+            | This template is made with <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg></span> by <a href="./Quantum.html" class="text-dark">colourlib</a>
+        </div>
+     </section>
+     <script src="./js/quantun.js"></script>
  </body>
 </html>
